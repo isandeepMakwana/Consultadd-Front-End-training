@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title> Assignment no 2</title>
+<Style>
+table {
+  border-spacing: 30px;
+}
+.bts{
+    height: 50px;
+    width: 100px;
+}
+h1{
+text-align: center;
+}
+</Style>
+
+<script>
+function middleButtonClicked()
+{
+    // swap 
+    var tmp = b1.innerHTML;
+    b1.innerHTML = b4.innerHTML;
+    b4.innerHTML = b7.innerHTML;
+    b7.innerHTML = b8.innerHTML;
+    b8.innerHTML = b9.innerHTML;
+    b9.innerHTML = b6.innerHTML;
+    b6.innerHTML = b3.innerHTML;
+    b3.innerHTML = b2.innerHTML;
+    b2.innerHTML = tmp;
+}
+</script>
+</head>
+<body>
+    <div>
+    <table  align="center">
+        <tr>
+          <th><button type='button' class='bts' id='b1'>1</button></th>
+          <th><button type='button' class='bts' id='b2'>2</button></th>
+          <th><button type='button' class='bts' id='b3'>3</button></th>
+        </tr>
+        <tr>
+          <td><button type='button' class='bts' id='b4'>4</button></td>
+          <td><button type='button' class='bts' id='b5' onclick='middleButtonClicked()'>5</button></td>
+          <td><button type='button' class='bts' id='b6'>6</button></td>
+        </tr>
+        <tr>
+          <td><button type='button' class='bts' id='b7'>7</button></td>
+          <td><button type='button' class='bts' id='b8'>8</button></td>
+          <td><button type='button' class='bts' id='b9'>9</button></td>
+        </tr>
+      </table>
+</div>
+<h1>Click 5 to Rotate </h1>
+</body>
+</html>
