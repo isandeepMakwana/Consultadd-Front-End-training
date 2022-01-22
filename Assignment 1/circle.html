@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>concentric circle Assignment</title>
+<style>
+.outerDivision
+{
+width:400px;
+height:400px;
+position:relative;
+/* background-color:lightblue; */
+border: 1px solid black;
+border-radius:50%;
+}
+.innerDivision
+{
+/* background-color:mediumseagreen; */
+position:relative;
+top:20%;
+left:20%;
+width:60%;
+height:60%;
+border:1px solid black;
+border-radius:50%;
+}
+.middleDivision
+{
+/* background-color:orange; */
+width:300px;
+height:300px;
+position:relative;
+top:12%;
+left:12%;
+border:1px solid black;
+border-radius:50%;
+}
+</style>
+<script>
+    function c1()
+    {
+    alert("C1 clicked");
+    }
+    function c2(event)
+    {
+    alert("C2 clicked");
+    event.stopPropagation();
+    }
+    function c3(event)
+    {
+    alert("C3 clicked");
+    event.stopPropagation();
+    }
+    </script>
+    
+
+</head>
+<body>
+
+<div class='outerDivision' onclick='c1()'>
+<div class='middleDivision' onclick='c2(event)'>
+<div class='innerDivision' onclick='c3(event)'>
+</div>
+</div>
+</div>
+
+</body>
+</html>
