@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { CurrencyComponent } from './currency/currency.component';
 import { FectchDataFromApiComponent } from './fectch-data-from-api/fectch-data-from-api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrencyComponent,
-    FectchDataFromApiComponent
+    FectchDataFromApiComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

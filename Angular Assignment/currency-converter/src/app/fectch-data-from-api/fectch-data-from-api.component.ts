@@ -10,7 +10,7 @@ export class FectchDataFromApiComponent implements OnInit {
   
   li:any;
   lis=[];
-  isHidden:boolean = true;
+  isHidden:boolean = false;
   constructor(private http: HttpClient) {
 
    }
@@ -23,11 +23,11 @@ export class FectchDataFromApiComponent implements OnInit {
         this.li=Response;
         this.lis=this.li;
       });  
-}
-  clickEve()
-  { 
-    this.isHidden = false;
-  }
+}     
+  // clickEve()
+  // { 
+  //   this.isHidden = false;
+  // }
 }
 
 
