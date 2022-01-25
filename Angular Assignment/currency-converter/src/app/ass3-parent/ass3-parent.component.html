@@ -1,0 +1,22 @@
+<br>
+<h1>Assignment 3</h1>
+<h3>List of users</h3>
+<app-ass3-child (message)="message($event)"></app-ass3-child>
+<div *ngIf="data?.length>0">
+<table style="width:75%" border="1">
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Date of birth</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let d of data;">
+<td>{{d.id}}</td>
+<td>{{d.name}}</td>
+<td>{{d.birthDate}}</td>
+</tr>
+</tbody>
+</table>
+</div>

@@ -9,7 +9,7 @@ export class ServiceForApiService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    return this.http.get("https://jsonplaceholder.typicode.com/posts");
+    return this.http.get("/assets/data.json");
   }
 
 }
