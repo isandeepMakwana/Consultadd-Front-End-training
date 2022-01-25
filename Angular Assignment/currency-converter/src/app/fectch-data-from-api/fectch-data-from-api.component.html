@@ -1,0 +1,21 @@
+<h1>Click button to show data</h1>
+<br>
+
+<button (click)="clickEve()">Show Data</button>
+<table class="table" id='tab' [hidden]="isHidden">
+	<thead>
+	<tr>
+		<th scope="col">Id</th>
+		<th scope="col">title</th>
+		<th scope="col">Body</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let e of li;">
+		<td>{{e.id}}</td>
+		<td>{{ e.title}}</td>
+		<td>{{ e.body}}</td>
+	</tr>
+	</tbody>
+</table>				
+
