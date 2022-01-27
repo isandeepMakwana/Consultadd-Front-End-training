@@ -8,7 +8,7 @@ export default function Posts() {
             return res.json()
         })
         .then(data => {
-                setPosts(data.slice(0,10));
+                setPosts(data.slice(0,30));
         })
         .catch(err => {
             console.log('Error ---- ', err)
@@ -35,6 +35,6 @@ export default function Posts() {
         ))
         }
     </tbody>
-    </table>			
+    </table>		
   </div>);
 }

@@ -51,7 +51,7 @@ export default function Assignment1() {
     }
 
   return (<div>
-
+<h1>Currency Converter</h1>
 &nbsp;&nbsp;&nbsp;&nbsp;Enter a number &nbsp;&nbsp;&nbsp;&nbsp;
 <input type="number" value ={inputData} onChange={getData} />&nbsp;&nbsp;&nbsp;&nbsp;
       <select id ="to" value={toSelect} onChange={s1}>
@@ -70,6 +70,7 @@ export default function Assignment1() {
       <br></br><br></br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
       <button type='button' onClick={processing}>Convert</button>
+      <hr></hr>
   </div>);
 }
 
